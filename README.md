@@ -39,11 +39,15 @@ Basic dataset folder structure, using Prostate dataset as an exemplary. (Note: M
 Please set all paths as mentioned at the top of every program 
 ```python
 python deca_Classifier.py
+```
 python deca_USS.py
+```
 python deca_GradCAM.py
+```
 python deca_BOUNDARY_FIT.py
+```
 python deca_eval.py
 
-```
+
 
 ```
