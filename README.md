@@ -1,3 +1,2 @@
 # MIDL_BoundaryCAM
-
-![Alt text](/img//frame.pdf "PLACEHOLDER")
+![My Image](img/frame.pdf)
