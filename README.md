@@ -1,2 +1,2 @@
 # MIDL_BoundaryCAM
-![My Image](img/frame.pdf)
+<img src="img/frame.pdf">
