@@ -36,7 +36,8 @@ Basic dataset folder structure, using Prostate dataset as an exemplary. (Note: M
 
 
 ## Train Decathlon Data
-Please set all paths as mentioned at the top of every program 
+Please set all paths as mentioned at the top of every program.
+
 1.
 ```python
 python deca_Classifier.py
