@@ -48,26 +48,69 @@ nibabel
 Basic dataset folder structure, using Prostate dataset as an exemplary. (Note: Make sure to change the dataset directory accordingly inside the config file )
 
 
-## Train Decathlon Data
+## Run BoundaryCAM on Decathlon
 Please set all paths as mentioned at the top of every program.
 
-1.
-```python
-python deca_Classifier.py
-```
-2.
-```
+1. Generate USS images
+```bash
 python deca_USS.py
 ```
-3.
+
+2. Train an image classifier for generating CAMs
+```bash
+python deca_Classifier.py
 ```
+
+3. Generate CAMs
+```bash
 python deca_GradCAM.py
 ```
-4.
-```
+4. Refine CAMs with BoundaryFit module
+```bash
 python deca_BOUNDARY_FIT.py
 ```
-5.
-```
+5. Evaluate the model
+```bash
 python deca_eval.py
 ```
+
+## Run BoundaryCAM on BraTS
+Please set all paths as mentioned at the top of every program.
+
+1. Covert BraTS dataset
+```bash
+python brats_transformation.py
+```
+
+2. Generate USS images
+```bash
+python brats_USS.py
+```
+
+3. Train an image classifier for generating CAMs
+```bash
+python brats_Classifier.py
+```
+
+5. Generate CAMs
+```bash
+python brats_GradCAM.py
+```
+6. Refine CAMs with BoundaryFit module
+```bash
+python brats_BOUNDARY_FIT.py
+```
+7. Evaluate the model
+```bash
+python brats_eval.py
+```
+
+## Results
+Qualitative segmentation results on BraTS and DECATHLON
+
+<img src="img/boundary_results.pdf" width="800" height="447"/>
+
+
+## Acknowledgments
+We gratefully thank the authors of https://github.com/shjo-april/PuzzleCAM, https://github.com/bnsreenu/python_for_microscopists/tree/master/231_234_BraTa2020_Unet_segmentation and https://github.com/yaleCat/Grad-CAM-pytorch from which some parts of our code are inspired.
+
