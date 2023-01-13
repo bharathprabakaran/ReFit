@@ -3,7 +3,20 @@
 <img src="img/frame.pdf" width="800" height="447"/>
 
 ## Abstract
-Reliable classification and detection of certain medical conditions in images with state-of-the-art semantic segmentation networks require vast amounts of pixel-wise annotation. However, the public availability of such datasets is minimal. Therefore, weakly supervised semantic segmentation presents a promising alternative to this problem. Nevertheless, few works focus on applying weakly supervised semantic segmentation to the medical sector. Due to their complexity and the small number of training examples of many datasets in the medical sector, classifier-based weakly supervised networks like class activation maps (CAMs) struggle to extract useful information from them. However, most state-of-the-art approaches rely on them to achieve their improvements. Therefore, we propose our EnsembleCAM framework that can still utilize the low-quality CAM predictions of complicated datasets to improve the accuracy of our results. Towards that, EnsembleCAM exploits our observations: first, low-quality CAM predictions, on low enough thresholds, often covers the target object completely, and second, our observation that the false positives of different low-quality CAMs vary from CAM to CAM. We performed exhaustive experiments on the popular multi-modal BRATS and prostate DECATHLON segmentation challenge datasets. Using the proposed framework, we have demonstrated an improved dice score of up to 8\% on BRATS and 6\% on DECATHLON compared to the previous state-of-the-art.
+Weakly Supervised Semantic Segmentation (WSSS) with only image-level supervision is
+a promising approach to deal with the need of Segmentation networks, especially for
+generating large number of pixel-wise masks in a given dataset. However, most state-
+of-the-art image-level WSSS techniques lack an understanding of the geometric features
+embedded in the images since the network cannot derive any object boundary information
+from just image-level labels. We define a boundary here as the line separating the object and
+background. To address this drawback, we propose our novel BoundaryCAM framework,
+which deploys state-of-the-art class activation maps combined with various post-processing
+techniques in order to achieve fine-grained higher-accuracy segmentation masks. To achieve
+this, we investigate a wide-range of state-of-the-art unsupervised semantic segmentation
+networks that can be used to construct a boundary map, which enables BoundaryCAM
+to predict object locations with sharper boundaries. By applying our method to WSSS
+predictions, we were able to achieve up to 10% improvements even to the benefit of the
+current state-of-the-art WSSS methods for medical imaging.
 
 
 ## Getting Started
