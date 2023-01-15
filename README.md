@@ -108,7 +108,7 @@ python brats_eval.py
 ## Results
 Qualitative segmentation results on BraTS and DECATHLON
 
-<img src="figures/examples.jpg" width="800" height="447"/>
+<img src="figures/examples.jpg" width="800" height="600"/>
 
 
 ## Acknowledgments
