@@ -25,18 +25,16 @@ current state-of-the-art WSSS methods for medical imaging.
 
 1. Dependencies :
 
-matplotlib 2.2.2
-numpy 1.14.5
-Pillow 5.2.0
-scikit-image 0.14.0
-scikit-learn 0.19.1
-scipy 1.1.0
-tensorboardX 1.2
-torch 1.4.0
-torchvision 0.5.0
-nibabel
+matplotlib 3.5.2
+numpy 1.21.5
+Pillow 9.2.0
+scikit-image 0.19.2
+scikit-learn 1.0.2
+scipy 1.9.1
+torch 1.13.0
+torchvision 0.14.0
+nibabel 5.0.0
 
- 2. Hardware :
 
 ### Download data
 
