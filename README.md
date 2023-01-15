@@ -1,6 +1,6 @@
 # MIDL_BoundaryCAM
 
-<img src="img/frame.pdf" width="800" height="447"/>
+<img src="figures/frame.jpg" width="800" height="447"/>
 
 ## Abstract
 Weakly Supervised Semantic Segmentation (WSSS) with only image-level supervision is
@@ -108,7 +108,7 @@ python brats_eval.py
 ## Results
 Qualitative segmentation results on BraTS and DECATHLON
 
-<img src="img/boundary_results.pdf" width="800" height="447"/>
+<img src="figures/examples.jpg" width="800" height="447"/>
 
 
 ## Acknowledgments
