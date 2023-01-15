@@ -105,6 +105,27 @@ python brats_BOUNDARY_FIT.py
 python brats_eval.py
 ```
 
+# Run BoundaryCAM on BUSI
+
+
+1. Create USS segementations
+```bash
+python3 BUSI_USS.py
+python3 BUSI_USS.py --segment quick
+```
+2. Generate CAMs
+```bash
+python3 Grad_cam.py
+```
+3. Refine CAMs with BoundaryFit module
+```bash
+python3 BoundaryFit_busi.py
+```
+4. Evaluate the model
+```bash
+python3 evaluate_busi.py
+```
+
 ## Results
 Qualitative segmentation results on BraTS and DECATHLON
 
