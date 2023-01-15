@@ -29,8 +29,8 @@ nibabel 5.0.0
 
 #### Dataset
 
-1. The BraTS-2020 dataset can downloaded from this [link](https://www.med.upenn.edu/cbica/brats2020/data.html)
-2. The preprocessed and 3-fold cross-validation split of prostate DECATHALON dataset WSS-CMER's link. [link](https://github.com/gaurav104/WSS-CMER).
+1. The BraTS-2020 dataset can downloaded from this [link](https://www.med.upenn.edu/cbica/brats2020/data.html).
+2. The preprocessed and 3-fold cross-validation split of prostate DECATHALON dataset WSS-CMER's [link](https://github.com/gaurav104/WSS-CMER).
 
 Basic dataset folder structure, using Prostate dataset as an exemplary. (Note: Make sure to change the dataset directory accordingly inside the config file )
 
