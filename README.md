@@ -1,11 +1,11 @@
-# BoundaryCAM
+# ReFit
 
-## BoundaryCAM Framework
+## ReFit Framework
 
 <img src="./figures/framework.JPG"/>
 
 ## Abstract
-Weakly Supervised Semantic Segmentation (WSSS) with only image-level supervision is a promising approach to deal with the need for Segmentation networks, especially for generating a large number of pixel-wise masks in a given dataset. However, most state-of-the-art image-level WSSS techniques lack an understanding of the geometric features embedded in the images since the network cannot derive any object boundary information from just image-level labels. We define a boundary here as the line separating the object and background. To address this drawback, we propose our novel BoundaryCAM framework, which deploys state-of-the-art class activation maps combined with various post-processing techniques in order to achieve fine-grained higher-accuracy segmentation masks. To achieve this, we investigate a state-of-the-art unsupervised semantic segmentation network that can be used to construct a boundary map, which enables BoundaryCAM to predict object locations with sharper boundaries. By applying our method to WSSS predictions, we were able to achieve up to 10% improvements even to the benefit of the current state-of-the-art WSSS methods for medical imaging. The framework is open-source and accessible online at https://github.com/bharathprabakaran/BoundaryCAM.
+Weakly Supervised Semantic Segmentation (WSSS) with only image-level supervision is a promising approach to deal with the need for Segmentation networks, especially for generating a large number of pixel-wise masks in a given dataset. However, most state-of-the-art image-level WSSS techniques lack an understanding of the geometric features embedded in the images since the network cannot derive any object boundary information from just image-level labels. We define a boundary here as the line separating the object and background. To address this drawback, we propose our novel ReFit framework, which deploys state-of-the-art class activation maps combined with various post-processing techniques in order to achieve fine-grained higher-accuracy segmentation masks. To achieve this, we investigate a state-of-the-art unsupervised semantic segmentation network that can be used to construct a boundary map, which enables ReFit to predict object locations with sharper boundaries. By applying our method to WSSS predictions, we were able to achieve up to 10% improvements even to the benefit of the current state-of-the-art WSSS methods for medical imaging.
 
 
 ## Getting Started
@@ -35,7 +35,7 @@ nibabel 5.0.0
 Basic dataset folder structure, using Prostate dataset as an exemplary. (Note: Make sure to change the dataset directory accordingly inside the config file )
 
 
-## Run BoundaryCAM on Decathlon
+## Run ReFit on Decathlon
 Please set all paths as mentioned at the top of every program.
 
 1. Generate USS images
@@ -61,7 +61,7 @@ python deca_BOUNDARY_FIT.py
 python deca_eval.py
 ```
 
-## Run BoundaryCAM on BraTS
+## Run ReFit on BraTS
 Please set all paths as mentioned at the top of every program.
 
 1. Covert BraTS dataset
@@ -92,7 +92,7 @@ python brats_BOUNDARY_FIT.py
 python brats_eval.py
 ```
 
-# Run BoundaryCAM on BUSI
+# Run ReFit on BUSI
 
 
 1. Create USS segementations
